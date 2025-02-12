@@ -1,0 +1,75 @@
+ :root {
+	--brand-color: #5863f8;
+	--dark-color: #1c1d21;
+	--light-color: #fffffa;
+ }
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+ * {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+ }
+ 
+ body {
+	 background-color: var(--dark-color);
+	 color: var(--light-color);
+	 font-family: 'Press Start 2P', cursive;
+ } 
+
+/* HEADER */
+header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+}
+
+h1 {
+	color: var(--light-color);
+}
+
+/* MAIN */
+
+.main {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 100px;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.settings {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	height: 400px;
+	width: 200px;
+	gap: 50px;
+}
+
+button {
+	height: 50px;
+	width: 125px;
+	background-color: var(--light-color);
+	color: var(--dark-color);
+	border: none;	
+	border-radius: 3px;
+	font-size: 1.3em;
+}
+
+#grid-container {
+    width: 500px;
+    height: 500px;
+    display: grid;
+    border: 2px solid var(--light-color);
+	margin-bottom: 100px;
+}
+
+.grid-cell {
+    background-color: var(--light-color);
+    border: 1px solid var(--light-color;
+}
