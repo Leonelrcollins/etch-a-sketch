@@ -11,10 +11,12 @@
 	<header><h1>ETCH A SKETCH	</h1></header>
 	<main class="main">
 		<div class="settings">
-			<button id="color-button">Color</button>
-			<button id="eraser-button">Eraser</button>
+			<div class="color-picker-wrapper">
+				<label for="color-picker" class="color-label">Color:</label>
+				<input type="color" id="color-picker">
+			</div>			
 			<button id="clear-button">Clear</button>
-			<button id="reset-button">Size</button>
+			<button id="size-button">Size</button>
 		</div>
 		<div id="grid-container" class="grid"></div>
 	</main>
