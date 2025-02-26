@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="styles.css" />
-	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-	<title>Etch A Sketch</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>Etch-A-Sketch</title>
 </head>
 <body>
-	<header><h1>ETCH A SKETCH	</h1></header>
-	<main class="main">
+	<header><h1 class="title">Etch-A-Sketch</h1></header>
+	<main>
 		<div class="settings">
-			<div class="color-picker-wrapper">
-				<label for="color-picker" class="color-label">Color:</label>
-				<input type="color" id="color-picker">
-			</div>			
-			<button id="clear-button">Clear</button>
-			<button id="size-button">Size</button>
+			<button id="size-button" class="btn">SIZE</button>
+			<div class="color-picker-container">
+				<input type="color" id="color-picker" value="#000000">
+				<button id="color-button" class="btn">COLOR</button>
+			</div>
+			<button id="random-button" class="btn">RANDOM</button>
+			<button id="reset-button" class="btn">RESET</button>
 		</div>
-		<div id="grid-container" class="grid"></div>
+		<div id="container"></div>
 	</main>
 	<script src="script.js"></script>
 </body>
-</html> 
+</html>
